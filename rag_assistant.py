@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransformer
 import openai
 
 # Set your OpenAI API key here
-openai.api_key = "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"
+openai.api_key = ""
 
 def load_index(index_path="faiss_index.bin", meta_path="metadata.json"):
     index = faiss.read_index(index_path)
