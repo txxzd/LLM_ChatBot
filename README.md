@@ -35,6 +35,6 @@ A Streamlit application providing a chat interface for interacting with the lear
 ### evaluation.py
 A script to evaluate the quality of the generated responses against reference answers using BLEU and BERTScore metrics.
 
-### evaluation_dataset.json (example file)
+### evaluation.json (example file)
 JSON file containing test cases (queries and reference answers) for evaluation purposes.
 
