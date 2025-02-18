@@ -1,0 +1,14 @@
+[
+    {
+        "query": "What is a linked list?",
+        "reference": "A linked list is a fundamental data structure in computer science. It mainly allows efficient insertion and deletion operations compared to arrays."
+    },
+    {
+        "query": "What is a binary search tree ?",
+        "reference": "A Binary Search Tree (or BST) is a data structure used in computer science for organizing and storing data in a sorted manner.."
+    },
+    {
+        "query": "Which sorting algorithm is the fastest for unordered data sets?",
+        "reference": "Quick sort is generally the fastest sorting algorithm for large, unordered data sets"
+    }
+]

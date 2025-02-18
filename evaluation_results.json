@@ -1,0 +1,23 @@
+[
+    {
+        "query": "What is a linked list?",
+        "generated_answer": "A linked list is a data structure used in computer science to store a collection of elements. Unlike arrays, linked lists do not store elements in contiguous memory locations. Instead, each element, called a node, contains the data and a reference (or pointer) to the next node in the sequence. This makes it easy to insert and delete elements from any position in the list, as you only need to update the pointers.\n\nThere are several types of linked lists:\n\n1. **Singly Linked List**: Each node contains data and a single pointer to the next node. Traversal is typically in one direction, from the first to the last node.\n\n2. **Doubly Linked List**: Each node contains data and two pointers, one pointing to the next node and another pointing to the previous node. This allows traversal in both directions, forward and backward.\n\n3. **Circular Linked List**: The last node in the list points back to the first node, forming a circular structure. This can be applied to both singly and doubly linked lists.\n\nLinked lists are often used for their dynamic size and ease of insertion and deletion, but they can be more complex to manage than arrays due to pointer manipulation and the need for additional memory to store pointers.",
+        "reference": "A linked list is a fundamental data structure in computer science. It mainly allows efficient insertion and deletion operations compared to arrays.",
+        "bleu": 0.02307386343574334,
+        "bert_f1": 0.8610140681266785
+    },
+    {
+        "query": "What is a binary search tree ?",
+        "generated_answer": "A binary search tree (BST) is a data structure that facilitates fast lookup, addition, and removal of items. It is composed of nodes, each containing a value, a reference to the left child, and a reference to the right child. The main properties of a BST are:\n\n1. **Node Arrangement**: For each node:\n   - All values in the left subtree are less than the node's value.\n   - All values in the right subtree are greater than or equal to the node's value.\n\n2. **Recursive Structure**: Each subtree is itself a binary search tree.\n\n3. **Operations**: The key operations\u2014search, insertion, and deletion\u2014can be performed in O(log n) time on average, provided the tree is balanced. However, in the worst case, these operations can degrade to O(n) if the tree becomes unbalanced (e.g., resembling a linked list).\n\n4. **Traversal**: Various traversal methods can be used on a BST:\n   - **Inorder Traversal**: Visits nodes in ascending order.\n   - **Preorder Traversal**: Visits the root node first, then the left subtree, followed by the right subtree.\n   - **Postorder Traversal**: Visits the left and right subtrees first, followed by the root node.\n   - **Breadth-First Traversal**: Visits nodes level by level.\n\nBSTs are widely used in applications where data is frequently retrieved, inserted, and deleted, and where maintaining a sorted order is beneficial. For balanced operations, self-balancing BSTs like AVL trees and Red-Black trees can be used.",
+        "reference": "A Binary Search Tree (or BST) is a data structure used in computer science for organizing and storing data in a sorted manner..",
+        "bleu": 0.014484860129575613,
+        "bert_f1": 0.8248178362846375
+    },
+    {
+        "query": "Which sorting algorithm is the fastest for unordered data sets?",
+        "generated_answer": "For unordered data sets, Quick Sort is typically considered one of the fastest sorting algorithms. Quick Sort is based on a divide-and-conquer strategy and generally has an average time complexity of O(n log n). However, its performance can degrade to O(n\u00b2) in the worst-case scenario, which can be mitigated by using strategies such as choosing a good pivot, often the median of the array or a random element.\n\nIt's important to note that while Quick Sort is often the fastest for general purposes, the actual fastest algorithm can depend on specific characteristics of the data set and the environment in which the sort is running. For example, Merge Sort also has a time complexity of O(n log n) and provides stable sorting with consistent performance regardless of the initial order of the elements. Additionally, built-in sorting functions in many programming languages are highly optimized and might be more efficient than a custom implementation of Quick Sort or other algorithms.",
+        "reference": "Quick sort is generally the fastest sorting algorithm for large, unordered data sets",
+        "bleu": 0.013798188527054707,
+        "bert_f1": 0.8717242479324341
+    }
+]
