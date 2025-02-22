@@ -4,9 +4,10 @@ import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import openai
+import os
 
 # Set your OpenAI API key here
-openai.api_key = ""
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def load_index(index_path="faiss_index.bin", meta_path="metadata.json"):
     index = faiss.read_index(index_path)
