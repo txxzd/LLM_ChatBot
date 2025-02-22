@@ -5,8 +5,9 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 import openai
 import os
-
+from dotenv import load_dotenv
 # Set your OpenAI API key here
+load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def load_index(index_path="faiss_index.bin", meta_path="metadata.json"):
